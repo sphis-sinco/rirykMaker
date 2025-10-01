@@ -25,7 +25,7 @@ class PieceData
 			final sizes = Assets.getText(sizesPath).split('\n');
 			pieceSizes.set(piece, sizes);
 
-			trace('Riryk piece: $piece sizes: $sizes');
+			trace('Got riryk piece: $piece sizes: $sizes');
 		}
 
 		if (Assets.exists(minMaxPath))
@@ -34,7 +34,7 @@ class PieceData
 			pieceMin.set(piece, Std.parseInt(minMax[0]));
 			pieceMax.set(piece, Std.parseInt(minMax[1]));
 
-			trace('Riryk piece: $piece min-max values: $minMax');
+			trace('Got riryk piece: $piece min-max values: $minMax');
 		}
 
 		if (Assets.exists(typesPath))
@@ -42,7 +42,7 @@ class PieceData
 			final types = Assets.getText(typesPath).split('\n');
 			pieceTypes.set(piece, types);
 
-			trace('Riryk piece: $piece types: $types');
+			trace('Got riryk piece: $piece types: $types');
 		}
 	}
 }
