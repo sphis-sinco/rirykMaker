@@ -4,7 +4,7 @@ import lime.utils.Assets;
 
 class PieceData
 {
-	public static final pieceSizes:Map<String, Int> = [];
+	public static final pieceSizes:Map<String, Array<String>> = [];
 
 	public static final pieceMin:Map<String, Int> = [];
 	public static final pieceMax:Map<String, Int> = [];
