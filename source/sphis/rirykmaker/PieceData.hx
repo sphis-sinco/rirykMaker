@@ -1,5 +1,7 @@
 package sphis.rirykmaker;
 
+import lime.utils.Assets;
+
 class PieceData
 {
 	public static final pieceSizes:Map<String, Int> = [];
@@ -14,8 +16,12 @@ class PieceData
 		final pathPrefix = 'assets/data/';
 		final pathSuffix = '.txt';
 
-		final sizesSuffix = '-sizes';
-		final minMaxSuffix = '-min-max';
-		final typeSuffix = '-types';
+		final sizesPath = pathPrefix + piece + '-sizes' + pathSuffix;
+		final minMaxPath = pathPrefix + piece + '-min-max' + pathSuffix;
+		final typesPath = pathPrefix + piece + '-types' + pathSuffix;
+
+		if (Assets.exists(sizesPath)) {}
+		if (Assets.exists(minMaxPath)) {}
+		if (Assets.exists(typesPath)) {}
 	}
 }
