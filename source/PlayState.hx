@@ -12,6 +12,7 @@ class PlayState extends FlxState
 	{
 		super.create();
 
+		bg = new FlxSprite();
 		bg.makeGraphic(FlxG.width, FlxG.height);
 		add(bg);
 	}
